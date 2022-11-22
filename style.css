@@ -1,7 +1,8 @@
-body{
+*{
     padding:0;
     margin:0;
     font-family:sans-serif;
+    box-sizing:border-box;
 }
 .container {
 width: 100%;
@@ -76,6 +77,11 @@ align-items: center;
     align-items: center;
 }
 
-.days div:hover{
-    border: solid lightseagreen;
+.days div:hover:not(.empty){
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.today{
+    background-color: lightseagreen;
 }
